@@ -5,24 +5,45 @@
 }
 
 /* Utility classes */
+.m-10{
+  margin: 10px 0;
+}
+.m-20{
+  margin: 20px 0;
+}
+.m-30{
+  margin: 30px 0;
+}
+
+.text-white{
+  color: white;
+}
+.text-grey{
+  color: grey;
+}
+
+
+
 .d-flex {
     display: flex;
 }
 .flex-wrap {
     flex-wrap: wrap;
 }
-
-body {
-    background-color: #333;
-    color: white;
+.flex-row{
+  flex-direction: row;
 }
 .wrapper {
-    height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#site_content{
+body {
+    background-color: grey;
+}
+
+#main_site{
     height: calc(100% - 60px);
 }
 aside.main_menu {
@@ -31,37 +52,72 @@ aside.main_menu {
 }
 
 .covers_section {
-    background-color: aquamarine;
-    padding: 20px;;
+    background-color: #141922;
+    padding: 20px;
     overflow-y: auto;
-    overflow-x: hidden;
     padding-top: 60px;
-    /* margin-top: 60px; */
     width: calc(100% - 300px);
 }
-.subscribe_banner {
+.subscribe {
     position: fixed;
     top: 0;
     right: 0;
     width: calc(100% - 300px);
     height: 60px;
-    background-color: #8a2be2a1;
+    background-color: rgba(4, 21, 52, 0.9);
 
 }
+
+.album-menu{
+  justify-content: center;
+}
+
+.album-menu a{
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: grey;
+
+}
+
+.recently_played .album{
+  justify-content: flex-start;
+}
+
+
 /* Covers section */
-.item {
-    width: 200px;
-    height: 200px;
-    background-color: red;
+
+.card{
+  flex-basis: 200px;
+}
+
+.card img{
+  max-width: 150px;
 }
 
 
 /* Footer */
-footer#site_footer {
+#site_footer {
     background-color: yellowgreen;
     height: 60px;
-    /* position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%; */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fine */
