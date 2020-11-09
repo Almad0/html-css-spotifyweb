@@ -88,7 +88,7 @@ aside.main_menu {
   padding: 0 0 0 15px; /*Necessari per il bordo ad inizio pagina*/
   margin-left: -20px;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 32px;
   border-left: 4px solid rgba(173, 255, 47, 0);
 }
 .home li a{
@@ -188,29 +188,74 @@ aside.main_menu {
   border-bottom: 2px solid rgba(173, 255, 47, 1)
 }
 
-
-
-
-
-
-
 .album{
   justify-content: flex-start;
 }
-
-
+.recently_played h3{
+  margin-bottom: 16px;
+}
+.created_for h3, .Popular_artist h3{
+  margin-bottom: 4px;
+}
+.created_for p, .Popular_artist p{
+font-size: 10px;
+color: #717171;
+margin-bottom: 12px;
+}
 .card{
-  flex-basis: 200px;
+  flex-basis: 175px;
+  margin: 6px 12px 5px 0;
 }
-
 .card img{
-  max-width: 177px;
+  /* position: relative; */
+  width: 175px;
+  transition: all 1s;
 }
-
+.card h4{
+  margin-top: 8px;
+}
 .card p{
   font-size: 10px;
   color: #717171;
+  margin-top: 6px;
+  text-align: center;
 }
+
+.Popular_artist .card img{
+  border-radius: 50%;
+}
+
+
+
+/* .card img::after{
+  font-family: "FontAwesome";
+  content: "\f144";
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+
+.card img:hover{
+  filter: brightness(0.3);
+  transform: scale(1.15);
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer */
@@ -226,12 +271,33 @@ aside.main_menu {
 }
 
 
+.left-player{
+  justify-content: space-around;
+  flex-basis: 230px;
+  align-items: center;
+  height: 70px;
+}
 
+.left-player img{
+  height: 50px;
+  margin-right: 10px;
+}
 
+.left-player div{
+  margin-right: auto;
+}
 
+.left-player p{
+  font-size: 10px;
+}
 
+.left-player i{
+  padding: 10px;
+}
 
-
+.center-player{
+  margin: auto;
+}
 
 
 
