@@ -166,10 +166,16 @@ aside.main_menu {
   outline: none;
 }
 
+
+.covers{
+  flex-direction: column;
+}
+
 .album-menu{
   justify-content: center;
+  align-items: center;
   position: relative;
-  height: 40px;
+  overflow: visible;
 }
 .album-menu a{
   text-decoration: none;
@@ -358,73 +364,38 @@ margin-bottom: 12px;
 
 
 @media screen and (max-width: 552px) {
-
-
   #main_site{
       height: calc(100% - 40px);
   }
-
   .covers_section {
     width: calc(100% - 40px);
   }
-
-
+  .subscribe {
+    width: calc(100% - 55px);
+  }
   aside.main_menu {
       min-width: 40px;
       padding: 10px;
-      background-color: black;
-      flex-direction: column;
-      justify-content: flex-start;
       text-align: center;
   }
-
-
   .logo #logosmall{
     display: inline-block;
     height: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
-
   .logo img{
     display: none;
   }
-
   .home li{
     padding-left: 6px;
     margin-left: -10px;
-    font-weight: bold;
-    line-height: 32px;
-    border-left: 4px solid rgba(173, 255, 47, 0);
   }
-
-  .home{
-    padding: 10px 0 5px;
-  }
-
-  .home ul, .playlist ul{
-    list-style: none;
-  }
-
   .home li a{
     display: none;
   }
-  .home li:hover{
-    border-left: 4px solid rgba(173, 255, 47, 1);
-  }
-  .home li:hover img, .home li:hover a{
-    filter: brightness(5);
-    color: white;
-  }
-
-
-
   .playlist{
     display: none;
   }
-
-
-
-
   .profile_logo p{
     border-bottom: 0;
     margin-bottom: 5px;
@@ -442,13 +413,23 @@ margin-bottom: 12px;
   .profile_logo h3 img{
     display: inline-block;
     height: 30px;
-    background-color: #808080;
-    border-radius: 100%;
-    vertical-align: middle;
     margin-right: 0;
   }
 
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
 
 
 
