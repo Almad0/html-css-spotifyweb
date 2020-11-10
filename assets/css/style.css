@@ -68,12 +68,13 @@ aside.main_menu {
     flex-direction: column;
     justify-content: flex-start;
 }
-
+.logo #logosmall{
+  display: none;
+}
 .logo img{
   height: 35px;
   margin-bottom: 10px;
 }
-
 .home{
   padding: 10px 0 5px;
 }
@@ -103,7 +104,6 @@ aside.main_menu {
   filter: brightness(5);
   color: white;
 }
-
 .playlist{
   line-height: 2rem;
   margin-top: 5px;
@@ -118,7 +118,6 @@ aside.main_menu {
   margin: 5px 10px 5px 0;
   padding: 8px;
 }
-
 .profile_logo{
   margin-top: auto;
 }
@@ -340,7 +339,7 @@ margin-bottom: 12px;
   overflow: hidden;
   width: 100px;
   background-color: #717171;
-  border-radius: 5%/50%;
+  border-radius: 2%/50%;
 }
 
 .right-player input[type='range']::-webkit-slider-thumb{
@@ -355,6 +354,101 @@ margin-bottom: 12px;
 }
 
 
+
+
+
+@media screen and (max-width: 552px) {
+
+
+  #main_site{
+      height: calc(100% - 40px);
+  }
+
+  .covers_section {
+    width: calc(100% - 40px);
+  }
+
+
+  aside.main_menu {
+      min-width: 40px;
+      padding: 10px;
+      background-color: black;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: center;
+  }
+
+
+  .logo #logosmall{
+    display: inline-block;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .logo img{
+    display: none;
+  }
+
+  .home li{
+    padding-left: 6px;
+    margin-left: -10px;
+    font-weight: bold;
+    line-height: 32px;
+    border-left: 4px solid rgba(173, 255, 47, 0);
+  }
+
+  .home{
+    padding: 10px 0 5px;
+  }
+
+  .home ul, .playlist ul{
+    list-style: none;
+  }
+
+  .home li a{
+    display: none;
+  }
+  .home li:hover{
+    border-left: 4px solid rgba(173, 255, 47, 1);
+  }
+  .home li:hover img, .home li:hover a{
+    filter: brightness(5);
+    color: white;
+  }
+
+
+
+  .playlist{
+    display: none;
+  }
+
+
+
+
+  .profile_logo p{
+    border-bottom: 0;
+    margin-bottom: 5px;
+    font-size: 0;
+  }
+  .profile_logo p i{
+    padding: 10px 0;
+    color: #717171;
+    font-size: 16px;
+  }
+  .profile_logo h3 {
+    margin-top: 10px;
+    font-size: 0;
+  }
+  .profile_logo h3 img{
+    display: inline-block;
+    height: 30px;
+    background-color: #808080;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 0;
+  }
+
+}
 
 
 
